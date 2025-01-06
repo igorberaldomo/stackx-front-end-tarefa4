@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="principal">
+        <div id="galeria">
+
+        </div>
+        <div id="manipulador">
+            <label for="imagens">selecione uma imagem:
+                <select name="imagens" id="imagens">
+                    <option value="leão">leão</option>
+                    <option value="cachorro">cachorro</option>
+                    <option value="passaro">passaro</option>
+                    <option value="tartaruga">tartaruga</option>
+                </select>
+            </label>
+            <div id="botão">
+                <button onclick="adicionarImagem()">Adicionar</button>
+                <button onclick="removerImagem()">Remover</button>
+            </div>
+            <p id = "err"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
