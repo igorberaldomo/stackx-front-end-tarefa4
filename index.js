@@ -2,12 +2,12 @@ let galeria = document.getElementById("galeria");
 let err = document.getElementById("err");
 var images = document.getElementById("imagens")
 let hasimage = false
-let hasclicked = false
+let firstload = false
 
 
 function adicionarImagem() {
     nome = localStorage.getItem("nome");
-    if (nome == null && hasclicked ==true) {
+    if (nome == null && firstload ==true) {
         nome = images.value;
     }
     console.log(nome);
@@ -28,8 +28,8 @@ function adicionarImagem() {
         err.innerHTML = "";
         }
     }
-    if (hasclicked == false) {
-        hasclicked = true
+    if (firstload == false) {
+        firstload = true
     }
 }
 
